@@ -6,7 +6,8 @@ import { RouterOutlet } from '@angular/router';
 import { ProductComponent } from './components/product/product.component';
 import { NaviComponent } from './components/navi/navi.component';
 import { CategoryComponent } from './components/category/category.component';
-import { HttpClient } from '@angular/common/http';
+import { CartSummaryComponent } from './components/cart-summary/cart-summary.component';
+import { ToastrService } from 'ngx-toastr';
 
 //{} parantez obje demek
 // ./ aynı klasör demek
@@ -22,10 +23,10 @@ import { HttpClient } from '@angular/common/http';
     ProductComponent,
     NaviComponent,
     CategoryComponent,
+    CartSummaryComponent
   ],
 })
 export class AppComponent {
-  constructor(private httpClient: HttpClient) {}
   title: string = 'northwind';
   user = 'Engin Demiroğ';
 }
